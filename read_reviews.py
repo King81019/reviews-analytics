@@ -35,3 +35,28 @@ for d in data:
 print('有', len(new), '比留言長度小於100字')
 print(new[0])
 print(new[1])
+
+good = []
+for d in data:
+    if 'good' in d:
+        good.append(d)
+print('一共有', len(good), '筆留言提到good')
+print(good[0])
+
+# List comprehension 快寫法
+good = [d for d in data if 'good' in d]
+
+bad = ['bad' in d for d in data]
+print(bad)
+
+
+
+
+
+
+
+
+
+
+
+
